@@ -92,10 +92,10 @@ export default function LeftPanel({
                         <p className="text-8xl text-white mb-10 flex items-center">
                             {Math.round(current.main.temp)} <span className='text-5xl text-gray-400'>{suffix}</span>
                         </p>
-                        <p className="text-3xl text-gray-300/80 my-10 font-semibold">
+                        <p className="text-3xl text-gray-300/80 md:my-10 my-6 font-semibold">
                             {current.weather[0].main}
                         </p>
-                        <p className="text-xs text-gray-400 md:my-10 my-5">
+                        <p className="text-xs text-gray-400 md:my-10 my-7">
                             Today&nbsp;&nbsp;.&nbsp;&nbsp;
                             {new Date().toLocaleDateString(undefined, {
                                 weekday: 'long',
