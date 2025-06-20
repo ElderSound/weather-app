@@ -17,7 +17,7 @@ export default function ThemeToggle() {
         <button
             onClick={toggleTheme}
             aria-label="Toggle light/dark mode"
-            className={`ml-4 p-2 rounded-full transition ${bg} ${hov}`}
+            className={` ml-2 md:ml-4 p-2 px-3 md:px-2 rounded-full transition ${bg} ${hov} hover:text-yellow-500`}
         >
 
             {theme === 'dark' ? (
@@ -30,7 +30,7 @@ export default function ThemeToggle() {
                 >
                     {/*  sol (modo light)*/}
                     <circle cx="12" cy="12" r="5" />
-                    <g stroke="currentColor" strokeWidth="2">
+                    <g stroke="currentColor" strokeWidth="2" >
                         <line x1="12" y1="1" x2="12" y2="3" />
                         <line x1="12" y1="21" x2="12" y2="23" />
                         <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />

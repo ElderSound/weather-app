@@ -34,7 +34,7 @@ export default function ForecastCard({ label, icon, tempMax, tempMin }) {
     const localPng = iconMap[icon] || '/fallback.png';
 
     return (
-        <div className={`${bg} rounded-lg p-2 flex flex-col items-center justify-between shadow`}>
+        <div className={`${bg} rounded-lg p-2 flex flex-col items-center justify-between shadow mt-5`}>
             {/* Día */}
             <p className={`text-sm font-medium ${txt}`}>
                 {label}
@@ -44,7 +44,7 @@ export default function ForecastCard({ label, icon, tempMax, tempMin }) {
             <img
                 src={localPng}
                 alt={label}
-                className="w-16 my-2"
+                className="w-16 my-2 md:my-10"
                 onError={e => { e.currentTarget.src = '/fallback.png'; }}
             />
 

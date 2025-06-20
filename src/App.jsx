@@ -10,6 +10,7 @@ import HighlightCard from './components/HighlightCard/HighlightCard';
 import SearchModal from './components/SearchModal/SearchModal';
 import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 import useHighlights from './hooks/useHighlights';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   // Contexto global de tema y unidad (°C/°F).
@@ -87,7 +88,7 @@ export default function App() {
 
   return (
     <div className={`${containerBg} ${containerText} min-h-screen`}>
-      {/* SearchModal por encima de todo, aparece cuando isModalOpen es true */}
+      {/* MODAL */}
       {isModalOpen && (
         <SearchModal
           suggestions={suggestions}
@@ -99,7 +100,9 @@ export default function App() {
         />
       )}
 
-      <div className="flex flex-col md:flex-row">
+      {/* CONTENEDOR PRINCIPAL */}
+
+      <div className="grid grid-cols-1 md:grid-cols-3 min-h-screen">
         {/* === PANEL IZQUIERDO === */}
         <LeftPanel
           current={current}
@@ -110,9 +113,9 @@ export default function App() {
         />
 
         {/* === PANEL DERECHO === */}
-        <div className="flex-1 px-20 py-4 ">
+        <div className="md:col-span-2 px-20 py-4">
           {/* Selector de unidades (°C / °F) y tema */}
-          <div className="flex justify-end items-center ">
+          <div className="flex  justify-center md:justify-end items-center ">
             <UnitToggle />
             <ThemeToggle />
           </div>
@@ -143,6 +146,9 @@ export default function App() {
               />
             ))}
           </div>
+
+          <Footer/>
+          
         </div>
       </div>
     </div>
