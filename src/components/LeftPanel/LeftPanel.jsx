@@ -95,7 +95,7 @@ export default function LeftPanel({
                         <p className="text-3xl text-gray-300/80 my-10 font-semibold">
                             {current.weather[0].main}
                         </p>
-                        <p className="text-xs text-gray-400 my-10">
+                        <p className="text-xs text-gray-400 md:my-10 my-5">
                             Today&nbsp;&nbsp;.&nbsp;&nbsp;
                             {new Date().toLocaleDateString(undefined, {
                                 weekday: 'long',
