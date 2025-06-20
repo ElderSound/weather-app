@@ -25,7 +25,7 @@ export default function ForecastCard({ label, icon, tempMax, tempMin }) {
     const suffix = unit === 'metric' ? '°C' : '°f';
 
     // Clases condicionales según tema
-    const bg = theme === 'dark' ? 'bg-gray-800/40' : 'bg-white';
+    const bg = theme === 'dark' ? 'bg-gray-800/40' : 'bg-gray-800/40';
     const txt = theme === 'dark' ? 'text-gray-300' : 'text-gray-700';
     const txtLg = theme === 'dark' ? 'text-gray-100' : 'text-gray-900';
     const txtSm = theme === 'dark' ? 'text-gray-400' : 'text-gray-500';

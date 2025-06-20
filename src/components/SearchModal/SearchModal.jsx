@@ -37,9 +37,9 @@ export default function SearchModal({
     const { theme } = useContext(ThemeUnitContext);
     const modalBg = theme === 'dark' ? 'bg-gray-800' : 'bg-white';
     const textLight = theme === 'dark' ? 'text-gray-200' : 'text-gray-700';
-    const borderClr = theme === 'dark' ? 'dark:border-gray-600' : 'border-gray-300';
+    const borderClr = theme === 'dark' ? 'border-gray-600' : 'border-gray-300';
     const inputBg = theme === 'dark' ? 'bg-gray-700' : 'bg-gray-100';
-    const hoverDark = theme === 'dark' ? 'dark:hover:bg-gray-700' : 'hover:bg-gray-100';
+    const hoverDark = theme === 'dark' ? 'hover:bg-gray-600' : 'hover:bg-gray-200';
 
     return (
         // Overlay semitransparente que cubre toda la pantalla
@@ -120,11 +120,11 @@ export default function SearchModal({
                                         <li key={idx}>
                                             <button
                                                 onClick={() => onSelectCity(city)}
-                                                className="
-                                                  w-full text-center px-2 py-2
+                                                className={`w-full text-center px-2 py-2
                                                   bg-gray-100 dark:bg-gray-700
-                                                  rounded hover:bg-gray-200 dark:hover:bg-gray-600
-                                                "
+                                                  rounded ${hoverDark}`}
+                                                  
+                                                
                                             >
                                                 {city.name}, {city.country}
                                             </button>
@@ -145,9 +145,8 @@ export default function SearchModal({
                                         <li key={idx}>
                                             <button
                                                 onClick={() => onSelectCity(city)}
-                                                className="
-                                                         w-full text-left px-3 py-2 flex items-center gap-2
-                                                        hover:bg-gray-100 dark:hover:bg-gray-700 rounded"
+                                                className={`w-full text-left px-3 py-2 flex items-center gap-2
+                                                        ${hoverDark} rounded`}
                                             >
 
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">

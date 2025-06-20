@@ -41,7 +41,7 @@ export default function LeftPanel({
     return (
         <>
             {/* Fondo de nubes */}
-            <div className="absolute inset-0 z-0 opacity-20 overflow-hidden md:w-1/3">
+            <div className="absolute inset-0 z-0 opacity-10 overflow-hidden md:w-1/3">
                 <img
                     src="/Cloud-background.png"
                     alt="clouds"

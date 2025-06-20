@@ -20,11 +20,11 @@ import { ThemeUnitContext } from '../../context/ThemeUnitContext';
 export default function HighlightCard({ title, value, unit, extra }) {
 
     const { theme } = useContext(ThemeUnitContext);
-    const bg = theme === 'dark' ? 'bg-gray-800/40' : 'bg-white';
+    const bg = theme === 'dark' ? 'bg-gray-800/40' : 'bg-gray-800/40';
     const titleC = theme === 'dark' ? 'text-gray-300' : 'text-gray-700';
     const valC = theme === 'dark' ? 'text-gray-100' : 'text-gray-900';
     const subC = theme === 'dark' ? 'text-gray-400' : 'text-gray-500';
-    const barBg = theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200';
+    const barBg = theme === 'dark' ? 'bg-gray-700' : 'bg-gray-800';
     // Función auxiliar para formatear la dirección de viento
     const getWindDirection = deg => {
         // Puedes adaptar para retornar N, NE, E, etc.

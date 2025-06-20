@@ -16,7 +16,7 @@ import { ThemeUnitContext } from '../../context/ThemeUnitContext';
  */
 export default function GeoButton({ onClick }) {
     const { theme } = useContext(ThemeUnitContext);
-    const bg = theme === 'dark' ? 'bg-gray-500/70' : 'bg-white';
+    const bg = theme === 'dark' ? 'bg-gray-500/70' : 'bg-white/30';
     const hov = theme === 'dark' ? 'hover:bg-gray-600' : 'hover:bg-white/40';
     return (
         <button
