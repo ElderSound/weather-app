@@ -29,7 +29,7 @@ export default function App() {
   // Al montar, pedimos coords automáticamente (sin esperar clic).
   useEffect(() => {
     getCoords();
-  }, [getCoords]);
+  }, []);
 
   // Autocomplete: lista de ciudades random, sugerencias y historial.
   const {
