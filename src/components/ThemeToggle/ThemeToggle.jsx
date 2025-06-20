@@ -17,14 +17,14 @@ export default function ThemeToggle() {
         <button
             onClick={toggleTheme}
             aria-label="Toggle light/dark mode"
-            className={` ml-2 md:ml-4 p-2 px-3 md:px-2 rounded-full transition ${bg} ${hov} hover:text-yellow-500`}
+            className={` ml-2 md:ml-4 p-2 px-3 md:px-2 rounded-full transition ${bg} ${hov} hover:text-yellow-500 `}
         >
 
             {theme === 'dark' ? (
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="w-6 h-6 active:text-yellow-500"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                 >
@@ -45,7 +45,7 @@ export default function ThemeToggle() {
                 // icono de luna (modo oscuro)
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="w-6 h-6 active:text-yellow-500"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                 >

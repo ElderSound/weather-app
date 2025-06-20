@@ -41,7 +41,7 @@ export default function LeftPanel({
     return (
         <>
 
-            <div className={`w-full h-screen ${bgClassName} p-6 flex flex-col items-center relative `}>
+            <div className={`w-full  ${bgClassName} p-6 flex flex-col items-center relative `}>
                 {/* Fondo de nubes */}
                 <div className="absolute inset-0 z-0 opacity-10 overflow-hidden ">
                     <img
@@ -69,7 +69,7 @@ export default function LeftPanel({
                 {/* Estado de carga */}
                 {loading && (
                     
-                    <p className={`fixed top-55 md:top-85 text-lg z-10 ${textColor}`}>
+                    <p className={`absolute top-70 text-lg z-20 ${textColor}`}>
                         Loading...
                     </p>
                 )}
@@ -87,15 +87,15 @@ export default function LeftPanel({
                         <img
                             src={localPng}
                             alt={current?.weather?.[0]?.description}
-                            className="w-30  my-40 "
+                            className="w-30  my-30 "
                         />
                         <p className="text-8xl text-white mb-10 flex items-center">
                             {Math.round(current.main.temp)} <span className='text-5xl text-gray-400'>{suffix}</span>
                         </p>
-                        <p className="text-3xl text-gray-300/80 my-7 font-semibold">
+                        <p className="text-3xl text-gray-300/80 my-10 font-semibold">
                             {current.weather[0].main}
                         </p>
-                        <p className="text-xs text-gray-400 my-5">
+                        <p className="text-xs text-gray-400 my-10">
                             Today&nbsp;&nbsp;.&nbsp;&nbsp;
                             {new Date().toLocaleDateString(undefined, {
                                 weekday: 'long',

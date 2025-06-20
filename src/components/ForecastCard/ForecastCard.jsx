@@ -34,7 +34,7 @@ export default function ForecastCard({ label, icon, tempMax, tempMin }) {
     const localPng = iconMap[icon] || '/fallback.png';
 
     return (
-        <div className={`${bg} rounded-lg p-2 flex flex-col items-center justify-between shadow mt-5`}>
+        <div className={`${bg} w-full md:min-w-[77px] md:max-w-[200px] rounded-lg p-2 px-4 flex flex-col items-center justify-evenly shadow mt-5`}>
             {/* Día */}
             <p className={`text-sm font-medium ${txt}`}>
                 {label}

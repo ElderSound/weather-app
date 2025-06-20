@@ -102,7 +102,7 @@ export default function App() {
 
       {/* CONTENEDOR PRINCIPAL */}
 
-      <div className="grid grid-cols-1 md:grid-cols-3 min-h-screen">
+      <div className="grid grid-cols-1  md:grid-cols-3 min-h-screen">
         {/* === PANEL IZQUIERDO === */}
         <LeftPanel
           current={current}
@@ -113,7 +113,7 @@ export default function App() {
         />
 
         {/* === PANEL DERECHO === */}
-        <div className="md:col-span-2 px-20 py-4">
+        <div className="md:col-span-2 px-15 m-auto lg:px-20 py-4">
           {/* Selector de unidades (°C / °F) y tema */}
           <div className="flex  justify-center md:justify-end items-center ">
             <UnitToggle />
