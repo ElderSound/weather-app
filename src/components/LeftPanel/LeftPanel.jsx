@@ -87,7 +87,7 @@ export default function LeftPanel({
                         <img
                             src={localPng}
                             alt={current?.weather?.[0]?.description}
-                            className="w-30  my-30 "
+                            className=" w-45 md:w-30  md:my-30 my-45 "
                         />
                         <p className="text-8xl text-white mb-10 flex items-center">
                             {Math.round(current.main.temp)} <span className='text-5xl text-gray-400'>{suffix}</span>
