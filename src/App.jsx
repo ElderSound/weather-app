@@ -113,7 +113,7 @@ export default function App() {
         />
 
         {/* === PANEL DERECHO === */}
-        <div className="md:col-span-2 px-15 m-auto lg:px-20 py-4">
+        <div className="md:col-span-2 md:px-15 m-auto lg:px-20 py-4">
           {/* Selector de unidades (°C / °F) y tema */}
           <div className="flex  justify-center md:justify-end items-center ">
             <UnitToggle />
@@ -121,7 +121,7 @@ export default function App() {
           </div>
 
           {/* Pronóstico a 5 días */}
-          <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
             {forecast.map((day, idx) => (
               <ForecastCard
                 key={idx}
