@@ -41,7 +41,7 @@ export default function LeftPanel({
     return (
         <>
 
-            <div className={`w-full  ${bgClassName} p-6 flex flex-col items-center relative `}>
+            <div className={`w-full min-h-screen ${bgClassName} p-6 flex flex-col items-center relative `}>
                 {/* Fondo de nubes */}
                 <div className="absolute inset-0 z-0 opacity-10 overflow-hidden ">
                     <img
